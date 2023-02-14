@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let fill = prompt("월을 적어주시면 분기를 알려드립니다.","0");
+        // if(fill>3 && fill<5){
+        //     document.write("봄입니다");
+        // }else if(fill>=6 && fill<=8){
+        //     document.write("여름입니다");
+        // }else if (fill>=9 && fill<=11){
+        //     document.write("가을입니다");
+        // }else{
+        //     document.write("겨울입니다");
+        // }
+
+        // let id = "user";
+        // let pw = 123;
+
+        // let a = prompt("아이디를 입력하시오");
+        // let b = prompt("패스워드를 입력하시오");
+
+        // if(id==a && pw ==b){
+        //     document.write(id+"님 환영합니다.");
+        // }else if(id!=a && pw ==b){
+        //     document.write("id 오류입니다.");
+        // }else if(id==a && pw !=b){
+        //     document.write("패스워드 오류입니다");
+        // }else if (id!=a && pw!=b){
+        //     document.write("나가");
+        // }
+        let n = prompt("마스크의 갯수를 입력 하세요.");
+        let result = 0;
+        let five = 0;
+        let three = 0;
+
+        // parseInt(11/5); 
+        
+        for(let i = parseInt(n/5); i>=0; i--){
+            if(i % 5 ==0){
+                    document.write ("5봉투"+parseInt(n/5)+"개.");     
+            }else if(n / 5 >=1 ){
+                
+                document.write ("5봉투"+parseInt(n/5)+"개.");
+                five = n % 5
+                document.write ("3봉투"+parseInt(five/3)+"개.");
+             }break
+            }
+             
+    </script>
+</body>
+</html>
